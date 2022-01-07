@@ -1,19 +1,22 @@
-public class Aula06EstruturaDeRepetiçãoWhile {
+public class Aula06EstruturaDeRepeticao01 {
     public static void main(String[] args) {
         // while, do while, for
 
-        int contador = 0;
+        int cont = 0;
 
-        while(contador <= 10){
-            System.out.println(contador);
-            contador += 1;
+        while(cont <= 10){
+            if (cont % 2 == 0){
+                System.out.println("While pares " + cont);
+                cont +=1;
+            }
         }
+
 
         //Do while
         do {
             System.out.println("Dentro do do-while");
-            contador++;
-        } while (contador <= 10);
+            cont++;
+        } while (cont <= 10);
 
 
         //for
